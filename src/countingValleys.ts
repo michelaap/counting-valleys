@@ -9,5 +9,6 @@ export default function execute(path: string) {
       level++;
     }
   }
+  if (level !== 0) throw new Error("Invalid path");
   return valleys;
 }

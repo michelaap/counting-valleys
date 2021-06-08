@@ -23,3 +23,8 @@ test("DDUUUDDDUUUDDDUUUDDU", () => {
   const valleys = countingValleys(path);
   expect(valleys).toBe(4);
 });
+
+test("DDU", () => {
+  const path = "DDU";
+  expect(() => countingValleys(path)).toThrow(new Error("Invalid path"));
+});
